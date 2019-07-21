@@ -1,6 +1,25 @@
-package eosPVT
+/* @License Starts
+ *
+ * Copyright © 2015 - present. MongoExpUser
+ *
+ * License: MIT - See: https://github.com/MongoExpUser/Heavy-Oil-PVT-Simulator/blob/master/LICENSE
+ *
+ * @License Ends
+ *
+ *
+ * ...Ecotert's Test.java (released as open-source under MIT License) implements: 
+ *
+ *
+ *  Testing of the following 2 classes: ThermodynamicProperties() and Utility()
+ *
+ *
+ */
 
-import eosPVT.*;
+
+package eosPVT;
+
+import eosPVT.Utility;
+import eosPVT.ThermodynamicProperties;
 
 public class Test
 {

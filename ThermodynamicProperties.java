@@ -10,7 +10,7 @@
  * ...Ecotert's ThermodynamicProperties.java (released as open-source under MIT License) implements:
  *
  *
- * Relevant relevant thermodynamic properties required as input into heavy oil (non-isothermal) PVT simulator e.g.
+ * Relevant thermodynamic properties required as input into heavy oil (non-isothermal) PVT simulator e.g.
  *
  *
  * (1) steam thermal properties
@@ -23,8 +23,16 @@
 
 
 
-package eosPVT
+package eosPVT;
 
+
+/* not used here: comment out
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.List;
+import java.util.Random;
+*/
 
 public class ThermodynamicProperties {
   

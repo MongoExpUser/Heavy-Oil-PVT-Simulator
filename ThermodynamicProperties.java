@@ -10,7 +10,7 @@
  * ...Ecotert's ThermodynamicProperties.java (released as open-source under MIT License) implements:
  *
  *
- * Relevant thermodynamic properties required as input into heavy oil (non-isothermal) PVT simulator e.g.
+ * Relevant thermodynamic properties required as input into PREos.java (PVT simulator) e.g.
  *
  *
  * (1) steam thermal properties

@@ -2,7 +2,7 @@
 This module implements the "Peng-Robison EOS" for a 3-phase system. <br> <br>
 It calculates relevant non-isothermal PVT properties that can be used:  <br>
 a) To describe a given heavy oil/bitumen sample.  <br>
-b) As input input into a thermal numerical reservoir simulator. <br>
+b) As input into a thermal numerical reservoir simulator. <br>
 
 <br>
 <h4>Reference</h4>

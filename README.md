@@ -1,4 +1,4 @@
-<h1><b>Heavy-Oil-PVT-Simulator</b></h1> <br>
+<h2>Heavy-Oil-PVT-Simulator</h2>
 This module implements the "Peng-Robison EOS" for a 3-phase system. 
 
 It calculates relevant non-isothermal PVT properties that can be used: <br>

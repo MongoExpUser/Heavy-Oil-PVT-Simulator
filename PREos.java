@@ -10,7 +10,8 @@
  * ...Ecotert's PREos.java (released as open-source under MIT License) implements:
  *
  *
- *  Heavy oil (non-isothermal) PVT simulator. It uses 2 other implemented classes (ThermodynamicProperties.java and Utility.java)
+ *  Heavy oil (non-isothermal) PVT simulator.
+ *  It uses 2 other implemented classes (ThermodynamicProperties.java and Utility.java)
  *
  *  The implementation is based on the solution of the "CLASSICAL" Peng-Robison EOS for a 3-phase system.
  *
@@ -139,14 +140,14 @@ public class PREos
           }
           else
           {
-             Kai[i] = Kai[i] + fugacityError;                                       //Adjusted equilibrium values (K-values) - oleic
-             Kbi[i] = Kai[i] + fugacityError;                                       //Adjusted equilibrium values (K-values) - aqueous
+             Kai[i] = Kai[i] + fugacityError;                               //Adjusted equilibrium values (K-values) - oleic
+             Kbi[i] = Kai[i] + fugacityError;                               //Adjusted equilibrium values (K-values) - aqueous
           }
   
         //Solve constraints equations here
   
   
-           xi[i] = xia[i] + xib[i];                                               //sum of liquid phase fractions (oleic+aqueous)
+           xi[i] = xia[i] + xib[i];                                         //sum of liquid phase fractions (oleic+aqueous)
       }
   
   
@@ -207,15 +208,24 @@ public class PREos
   
      //coefficents of cubic equations
      double a3 = 1;
-     double a2 = 10.5368;//(B - 1);
-     double a1 = -23.9008;//(A - 3 * B * B - 2 * B);
-     double a0 = 12.3640;//(A * B - B * B - B * B * B);
+     double a2 = (B - 1);
+     double a1 = (A - 3 * B * B - 2 * B);
+     double a0 = (A * B - B * B - B * B * B);
   
      //variables for intermediate coefficients and solution (roots) of equation
      //(Based on Cardano's formula for cubic equation)
-     double b0 = 0;    double y1 = 0;   double solution1 = 0;    double b1 = 0;
-     double y2 = 0;   double solution2 = 0;    double d2 = 0;    double y3 = 0;
-     double solution3 = 0;    double d = 0;     double r = 0;    double phi = 0;
+     double b0 = 0;
+     double y1 = 0;
+     double solution1 = 0;
+     double b1 = 0;
+     double y2 = 0;
+     double solution2 = 0;
+     double d2 = 0;
+     double y3 = 0;
+     double solution3 = 0;
+     double d = 0;
+     double r = 0;
+     double phi = 0;
   
      //intermediate coefficients computations
      b1 = (1 / 3) * (3 * a1 - a2 * a2);
@@ -319,3 +329,5 @@ public class PREos
   return results;
   
  }
+
+}

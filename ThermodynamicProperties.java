@@ -1,6 +1,30 @@
+/* @License Starts
+ *
+ * Copyright © 2015 - present. MongoExpUser
+ *
+ * License: MIT - See: https://github.com/MongoExpUser/Shale-Reservoir-DNN/blob/master/LICENSE
+ *
+ * @License Ends
+ *
+ *
+ * ...Ecotert's ThermodynamicProperties.java (released as open-source under MIT License) implements:
+ *
+ *
+ * Relevant relevant thermodynamic properties required as input into heavy oil (non-isothermal) PVT simulator e.g.
+ *
+ *
+ * (1) steam thermal properties
+ * (2) oil thermal properties
+ * (3) gas thermal properties
+ * (4) mode fractions
+ * (4) etc.
+ *
+ */
+
+
+
 package eosPVT
 
-import eosPVT.*;
 
 public class ThermodynamicProperties {
   
@@ -424,7 +448,5 @@ public class ThermodynamicProperties {
     }
     return state;
   }
-
-
 
 }

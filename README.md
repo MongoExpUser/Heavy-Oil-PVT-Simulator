@@ -1,4 +1,4 @@
-Heavy-Oil-PVT-Simulator
+<b>Heavy-Oil-PVT-Simulator</b>
 
 
 This module implements the "Peng-Robison EOS" for a 3-phase system. 

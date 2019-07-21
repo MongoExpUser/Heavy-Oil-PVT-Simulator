@@ -7,10 +7,10 @@
  * @License Ends
  *
  *
- * ...Ecotert's Utilities.java (released as open-source under MIT License) implements:
+ * ...Ecotert's Utility.java (released as open-source under MIT License) implements:
  *
  *
- * Relevant general utility methods required as input into heavy oil (non-isothermal) PVT simulator.
+ * Relevant general utility methods required as input into PREos.java (PVT simulator) e.g.
  *
  *
  */
@@ -238,5 +238,5 @@ public class Utility
      }
    return E;
  }
- 
+
 }

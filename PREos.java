@@ -7,17 +7,21 @@
  * @License Ends
  *
  *
- * ...Ecotert's PREos.java (released as open-source under MIT License) implements:
+ * ...Ecotert's PREos.java (released as open-source under MIT License) implements: Heavy oil (non-isothermal) PVT simulator.
  *
  *
- *  Heavy oil (non-isothermal) PVT simulator.
- *  It uses 2 other implemented classes (ThermodynamicProperties.java and Utility.java)
+ *  The PVT simulator uses 2 other implemented classes (ThermodynamicProperties.java and Utility.java)
  *
  *  The implementation is based on the solution of the "CLASSICAL" Peng-Robison EOS for a 3-phase system.
  *
  *  Reference:
  *  Peng, D.-Y and Robinson, D.B. (1976). Two and three phase equilibrium calculations for systems containing water.
  *  Canadian Journal of Chem. Eng. Vol. 54, pg. 595-599.
+ *
+*
+ * The PVT simulator calculates relevant non-isothermal PVT properties that can be used:
+ * a) To describe or characterize a given heavy oil/bitumen sample.
+ * b) As input into a thermal numerical reservoir simulator.
  *
  *
  */
@@ -329,5 +333,5 @@ public class PREos
   return results;
   
  }
-
+    
 }

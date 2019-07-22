@@ -10,7 +10,7 @@
  * ...Ecotert's PREos.java (released as open-source under MIT License) implements: Heavy oil (non-isothermal) PVT simulator.
  *
  *
- *  The PVT simulator uses 2 other implemented classes (ThermodynamicProperties.java and Utility.java)
+ *  The PVT simulator uses 2 other implemented classes (ThermodynamicProperties() and Utility())
  *
  *  The implementation is based on the solution of the "CLASSICAL" Peng-Robison EOS for a 3-phase system.
  *

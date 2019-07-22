@@ -10,7 +10,7 @@
  * ...Ecotert's PREos.java (released as open-source under MIT License) implements: Heavy oil (non-isothermal) PVT simulator.
  *
  *
- *  The PVT simulator uses 2 other implemented classes (ThermodynamicProperties.java and Utility.java)
+ *  The PVT simulator uses 2 other implemented classes (ThermodynamicProperties() and Utility())
  *
  *  The implementation is based on the solution of the "CLASSICAL" Peng-Robison EOS for a 3-phase system.
  *
@@ -35,13 +35,9 @@ import eosPVT.ThermodynamicProperties;
 
 public class PREos
 {
-
-    
-  //contructor
-  public void PREos(){}
-  
-  
-  
+    //contructor
+    public void PREos(){}
+ 
     ThermodynamicProperties tp = new ThermodynamicProperties();
     Utility ut = new Utility();
   
@@ -110,8 +106,6 @@ public class PREos
    double CC [] = new double[4]; //solution Matrix
    double fugacityCount = 0;
   
-  
-  
    if (moleFraction == false)
    {
      Zi = tp.globalMoleFraction(n, typeOfHC, MassC1_C10_CO2_H2S_N2);
@@ -149,8 +143,7 @@ public class PREos
           }
   
         //Solve constraints equations here
-  
-  
+ 
            xi[i] = xia[i] + xib[i];                                         //sum of liquid phase fractions (oleic+aqueous)
       }
   
@@ -201,7 +194,6 @@ public class PREos
              sumaij = sumaij + Math.pow( (ai[i]*ai[j-1]), 0.5 ) * xia[i]*xia[j-1] * ip;
              sumai = sumai + Math.pow( (ai[i]*ai[j-1]), 0.5 ) * xia[j-1] * ip;
            }
-    
        }
     }
   

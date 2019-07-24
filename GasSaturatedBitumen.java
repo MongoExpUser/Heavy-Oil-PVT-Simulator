@@ -1,6 +1,6 @@
 /* @License Starts
  *
- * Copyright © 2015 - present. MongoExpUser
+ * Copyright © 2002 - present. MongoExpUser
  *
  * License: MIT - See: https://github.com/MongoExpUser/Heavy-Oil-PVT-Simulator/blob/master/LICENSE
  *
@@ -27,8 +27,7 @@ public class GasSaturatedBitumen {
 
     ThermodynamicProperties tp = new ThermodynamicProperties();
     Utility ut = new Utility();
-
-    GasSaturatedBitumen gsb = new GasSaturatedBitumen();
+   
     System.out.println("Program for Calculating Viscosity of Gas-Saturated Bitumen");
 
     double T_in_K = 0;

@@ -1,5 +1,27 @@
-public class GasSaturatedBitumen {
+/* @License Starts
+ *
+ * Copyright © 2015 - present. MongoExpUser
+ *
+ * License: MIT - See: https://github.com/MongoExpUser/Heavy-Oil-PVT-Simulator/blob/master/LICENSE
+ *
+ * @License Ends
+ *
+ *
+ * ...Ecotert's GasSaturatedBitumen.java (released as open-source under MIT License) implements: 
+ *
+ * Simple viscosity calculation for gas-saturated bitumen.
+ * 
+ *
+ */
 
+
+
+package eosPVT;
+
+import eosPVT.Utility;
+import eosPVT.ThermodynamicProperties;
+
+public class GasSaturatedBitumen {
 
   public static void main(String[] args) {
 

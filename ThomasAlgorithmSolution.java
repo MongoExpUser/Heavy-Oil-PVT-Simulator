@@ -26,8 +26,11 @@ import eosPVT.Utility;
 import eosPVT.ThermodynamicProperties;
 
 public class ThomasAlgorithmSolution {
+   
+   
+   public void ThomasAlgorithmSolution(){}
 
-   static double [] ThomasAlgorithmSolution (double upperElements [], double diagonalElements [],
+   double [] ThomasAlgorithmSolution (double upperElements [], double diagonalElements [],
                                              double lowerElements [], double rhsElements []){
 
      //For an m x n tri-diagonal matrix, number of rows (m) = number of cols n = (matrix size)

@@ -39,10 +39,6 @@ public class ThermodynamicProperties {
   //contructor
   public void ThermodynamicProperties(){}
   
-
-  //Create a new utility class for general use
-  Utility ut = new Utility();
-
   //Global mole fraction computation
   double [] globalMoleFraction(int n, int [] typeOfHC, double [] MassC1_C10_CO2_H2S_N2){
     // n = number of hydrocarbon components; typeOfHC = 1,2...13 , e.g. (n-Hexane, n-Propane) = n = [6-1,3-1]

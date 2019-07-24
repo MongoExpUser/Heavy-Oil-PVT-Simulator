@@ -1,12 +1,31 @@
-
+/* @License Starts
+ *
+ * Copyright © 2002 - present. MongoExpUser
+ *
+ * License: MIT - See: https://github.com/MongoExpUser/Heavy-Oil-PVT-Simulator/blob/master/LICENSE
+ *
+ * @License Ends
+ *
+ *
+ * ...Ecotert's ThomasAlgorithmSolution.java (released as open-source under MIT License) implements:
+ *
+ * A simple solution of tri-diagional using the Thomas Algorithm .
+ *
+ * Given an equation of the form Ax = B, where A is an m x n tri-diagional square
+ * matrix, with m = n = number of diagonal elements, this class computes the solution
+ * E, using a method, which makes use of the Thomas Algorithm.
+ *
+ * Note: The array of elements in A and B (RHS) are supplied as arguments to the ThomasAlgorithmSolution  method.
+ *
+ *
+ */
 
 
 
 public class ThomasAlgorithmSolution {
 
-   //Thomas algorithm method
    static double [] ThomasAlgorithmSolution (double upperElements [], double diagonalElements [],
-                                      double lowerElements [], double rhsElements []){
+                                             double lowerElements [], double rhsElements []){
 
      //For an m x n tri-diagonal matrix, number of rows (m) = number of cols n = (matrix size)
      int matrixSize = diagonalElements.length;

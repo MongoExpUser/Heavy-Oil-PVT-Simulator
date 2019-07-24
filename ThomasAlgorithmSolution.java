@@ -21,7 +21,6 @@
  */
 
 
-
 public class ThomasAlgorithmSolution {
 
    static double [] ThomasAlgorithmSolution (double upperElements [], double diagonalElements [],

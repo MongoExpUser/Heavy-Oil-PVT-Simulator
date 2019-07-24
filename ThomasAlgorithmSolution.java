@@ -30,7 +30,7 @@ public class ThomasAlgorithmSolution {
    
    public void ThomasAlgorithmSolution(){}
 
-   double [] ThomasAlgorithmSolution (double upperElements [], double diagonalElements [],
+   double [] SolveEquation (double upperElements [], double diagonalElements [],
                                              double lowerElements [], double rhsElements []){
 
      //For an m x n tri-diagonal matrix, number of rows (m) = number of cols n = (matrix size)

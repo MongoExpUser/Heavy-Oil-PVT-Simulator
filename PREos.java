@@ -42,7 +42,7 @@ public class PREos
   public double componentZFactor()
   {
       return 0;
-   }
+  }
   
   public double componentKValue()
   {
@@ -51,8 +51,7 @@ public class PREos
   
   public double [] compute(int n, int [] typeOfHC, double [] MassC1_C10_CO2_H2S_N2, double T_in_K,
                             double P_in_MPa, boolean moleFraction,double [] moleFractionC1_C10_CO2_H2S_N2)
-  {
-                              
+  {                        
    ThermodynamicProperties tp = new ThermodynamicProperties();
    Utility ut = new Utility();
   
@@ -106,7 +105,6 @@ public class PREos
    double CC [] = new double[4]; //solution Matrix
    double fugacityCount = 0;
   
-  
    if (moleFraction == false)
    {
      Zi = tp.globalMoleFraction(n, typeOfHC, MassC1_C10_CO2_H2S_N2);
@@ -127,7 +125,6 @@ public class PREos
     }
   
     do{
-      
         fugacityCount = fugacityCount + 1;
   
         //Use initial mole fraction in phases here, and calculate initial K-factor and other contraints for input into EOS
@@ -144,11 +141,8 @@ public class PREos
           }
   
         //Solve constraints equations here
-  
-  
            xi[i] = xia[i] + xib[i];                                         //sum of liquid phase fractions (oleic+aqueous)
       }
-  
   
       //average properties and coefficients computations
       for (int i = 0; i < typeOfHC.length; i++)
@@ -196,7 +190,6 @@ public class PREos
              sumaij = sumaij + Math.pow( (ai[i]*ai[j-1]), 0.5 ) * xia[i]*xia[j-1] * ip;
              sumai = sumai + Math.pow( (ai[i]*ai[j-1]), 0.5 ) * xia[j-1] * ip;
            }
-    
        }
     }
   
@@ -280,7 +273,6 @@ public class PREos
      }
   
      fugacityError = Math.abs(1 - Math.abs(ut.maximumOfArrayValues(fugacityRatio)));
-  
     }
     while(fugacityError > 0.00001);
   
@@ -319,15 +311,12 @@ public class PREos
   
      for(int i = 0; i < j; i++)
      {
-       denomenator = (Kai[i]/Kbi[i] - Kai[i]);
        Xai[i] = Ao + (1 - Kai[i]);
        Xbi[i] = Bo + (Kai[i]/Kbi[i] - Kai[i]);
        Yi[i] = Do + (Kai[i]/Kbi[i]);
     }
-
+    
   return results;
-  
  }
-
 }
 

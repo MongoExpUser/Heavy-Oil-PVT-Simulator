@@ -20,6 +20,10 @@
  *
  */
 
+package eosPVT;
+
+import eosPVT.Utility;
+import eosPVT.ThermodynamicProperties;
 
 public class ThomasAlgorithmSolution {
 

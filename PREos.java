@@ -35,8 +35,11 @@ import eosPVT.ThermodynamicProperties;
 
 public class PREos
 {
-  //contructor
-  public void PREos(){}
+  
+  public void PREos()
+  {
+    //contructor
+  }
   
 
   public double componentZFactor()
@@ -51,7 +54,8 @@ public class PREos
   
   public double [] compute(int n, int [] typeOfHC, double [] MassC1_C10_CO2_H2S_N2, double T_in_K,
                             double P_in_MPa, boolean moleFraction,double [] moleFractionC1_C10_CO2_H2S_N2)
-  {                        
+  {
+    
    ThermodynamicProperties tp = new ThermodynamicProperties();
    Utility ut = new Utility();
   
@@ -117,7 +121,7 @@ public class PREos
     //copy acentric factors to w (a single character) for easy code writing
     w = ut.copy(tp.AcC1_C10_CO2_H2S_N2);
   
-    //Pseudo-reduced properties
+    //pseudo-reduced properties
     for(int i = 0; i < typeOfHC.length; i++)
     {
       x = T / tp.TcC1_C10_CO2_H2S_N2[typeOfHC[i]]; //Pseudo-reduced temperature
@@ -127,7 +131,7 @@ public class PREos
     do{
         fugacityCount = fugacityCount + 1;
   
-        //Use initial mole fraction in phases here, and calculate initial K-factor and other contraints for input into EOS
+        //use initial mole fraction in phases here, and calculate initial K-factor and other contraints for input into EOS
         for(int i = 0; i < typeOfHC.length; i++){
           if(fugacityCount == 1)
           {
@@ -140,7 +144,7 @@ public class PREos
              Kbi[i] = Kai[i] + fugacityError;                               //Adjusted equilibrium values (K-values) - aqueous
           }
   
-        //Solve constraints equations here
+        //solve constraints equations here
            xi[i] = xia[i] + xib[i];                                         //sum of liquid phase fractions (oleic+aqueous)
       }
   
@@ -205,7 +209,7 @@ public class PREos
      double a0 = (A * B - B * B - B * B * B);
   
      //variables for intermediate coefficients and solution (roots) of equation
-     //(Based on Cardano's formula for cubic equation)
+     //(based on Cardano's formula for cubic equation)
      double b0 = 0;
      double y1 = 0;
      double solution1 = 0;
@@ -253,14 +257,14 @@ public class PREos
        solution3 = (y3 - a2 / 3); ;
      }
   
-     //Put solution (roots) into an array.
+     //put solution (roots) into an array.
      zFactors[0] = solution1; zFactors[1] = solution2; zFactors[2] = solution3;
   
      //z-factors for liquid and vapour phases
      double vZ = ut.vapourCompressibilty(zFactors);
      double lZ = ut.liquidCompressibilty(zFactors);
   
-     //Test for fugacity condition here
+     //test for fugacity condition here
      for (int i = 0; i < typeOfHC.length; i++)
      {
        fhiv = bi[i]/b * (vZ-1) - ut.nl(vZ-B) - A/(2.828*B)*(2*(sumai)/a-bi[i]/b)*(ut.nl((vZ+2.414*B)/(vZ-0.414*B)));
@@ -280,10 +284,10 @@ public class PREos
      //return (fugacityRatio);
    }
   
-  
-  //Computing phase components fractions
   double [] phaseComponentsFraction(double [] Zi, double [] Kai, double [] Kbi)
   {
+     //computing phase components fractions
+     
      int j = Zi.length;
      double [] Xai = new double[j];
      double [] Xbi = new double[j];
@@ -318,5 +322,5 @@ public class PREos
     
   return results;
  }
+ 
 }
-

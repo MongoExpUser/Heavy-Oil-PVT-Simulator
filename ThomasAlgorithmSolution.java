@@ -27,7 +27,7 @@ import eosPVT.ThermodynamicProperties;
 
 public class ThomasAlgorithmSolution {
    
-   
+   //contructor
    public void ThomasAlgorithmSolution(){}
 
    double [] SolveEquation (double upperElements [], double diagonalElements [],

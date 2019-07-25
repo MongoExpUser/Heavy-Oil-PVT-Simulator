@@ -116,7 +116,7 @@ public class GasSaturatedBitumen {
     viscosity_in_mPas = Math.exp(d);
 
     //print results
-    System.out.println("Viscosity of gas-satuared bitumen is" + " " + d + " mPas");
+    System.out.println("Viscosity of gas-satuared bitumen is" + " " + viscosity_in_mPas + " mPas");
 
   }
 }

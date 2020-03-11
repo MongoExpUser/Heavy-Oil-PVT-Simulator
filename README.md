@@ -12,7 +12,9 @@ Peng, D.-Y and Robinson, D.B. (1976). Two and three phase equilibrium calculatio
 ![Image description](https://ecotert.com/image/HO_B_Image.jpg)
 
 
-| Dense Oil Type | API |
+| Oil Type | API Deg |
 | --- | --- |
 | Bitumen | < 10 |
-| Moderate HO | 10 <= 22 <= |
+| Heavy Oil | < 22.3 |
+| Medium Oil | 22.3-31.1 |
+| Light Oil | > 31.1 |

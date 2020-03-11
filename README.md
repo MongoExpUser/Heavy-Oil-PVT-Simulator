@@ -9,4 +9,4 @@ b) As input into a thermal numerical reservoir simulator. <br>
 Peng, D.-Y and Robinson, D.B. (1976). Two and three phase equilibrium calculations for systems containing water. Can. J. Chem. Eng. Vol. 54, pg. 595-599. <br>
 
 #
-![Image description](link-to-image)
+![Image description](https://ecotert.com/image/HO_B_Image.jpg)

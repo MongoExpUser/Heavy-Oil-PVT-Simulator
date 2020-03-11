@@ -10,7 +10,7 @@ Peng, D.-Y and Robinson, D.B. (1976). Two and three phase equilibrium calculatio
 
 #
 # Oil Type
-![Image description](https://github.com/MongoExpUser/Heavy-Oil-PVT-Simulator/blob/master/oil.jpeg)
+![Image description](https://github.com/MongoExpUser/Heavy-Oil-PVT-Simulator/blob/master/oil.jpeg) ![Image description](https://github.com/MongoExpUser/Heavy-Oil-PVT-Simulator/blob/master/oil.jpeg) ![Image description](https://github.com/MongoExpUser/Heavy-Oil-PVT-Simulator/blob/master/oil.jpeg) 
 
 #
 | Oil Type | API Deg |

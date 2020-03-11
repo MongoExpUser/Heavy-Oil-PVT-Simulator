@@ -9,11 +9,11 @@ b) As input into a thermal numerical reservoir simulator. <br>
 Peng, D.-Y and Robinson, D.B. (1976). Two and three phase equilibrium calculations for systems containing water. Can. J. Chem. Eng. Vol. 54, pg. 595-599. <br>
 
 #
-# Oil Classification By API
+# Oil Classification By Deg API
 ![Image description](https://github.com/MongoExpUser/Heavy-Oil-PVT-Simulator/blob/master/oil.jpeg) ![Image description](https://github.com/MongoExpUser/Heavy-Oil-PVT-Simulator/blob/master/oil.jpeg) ![Image description](https://github.com/MongoExpUser/Heavy-Oil-PVT-Simulator/blob/master/oil.jpeg) 
 
 #
-| Oil Class | API Deg |
+| Oil Class | Deg API |
 | --- | --- |
 | Bitumen | < 10 |
 | Heavy Oil | < 22.3 |

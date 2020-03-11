@@ -10,3 +10,9 @@ Peng, D.-Y and Robinson, D.B. (1976). Two and three phase equilibrium calculatio
 
 #
 ![Image description](https://ecotert.com/image/HO_B_Image.jpg)
+
+
+| Command | Description |
+| --- | --- |
+| git status | List all new or modified files |
+| git diff | Show file differences that haven't been staged |

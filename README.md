@@ -20,3 +20,10 @@ Peng, D.-Y and Robinson, D.B. (1976). Two and three phase equilibrium calculatio
 | Medium Oil | 22.3-31.1 |
 | Light Oil | > 31.1 |
 #
+
+
+# License
+
+Copyright © 2015 - present. MongoExpUser
+
+Licensed under the MIT license.

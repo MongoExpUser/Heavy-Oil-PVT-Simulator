@@ -36,8 +36,7 @@ import java.util.Random;
 
 public class ThermodynamicProperties {
   
-  //contructor
-  public ThermodynamicProperties(){}
+  public void ThermodynamicProperties(){}
   
   //Global mole fraction computation
   double [] globalMoleFraction(int n, int [] typeOfHC, double [] MassC1_C10_CO2_H2S_N2){

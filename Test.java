@@ -24,8 +24,7 @@ import eosPVT.ThermodynamicProperties;
 public class Test
 {
   
-  //contructor
-  public void Test(){}
+  public Test(){}
   
 
   public static void main(String[] args)

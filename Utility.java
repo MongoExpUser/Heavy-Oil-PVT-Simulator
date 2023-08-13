@@ -22,8 +22,7 @@ package eosPVT;
 public class Utility
 {
   
- //contructor
- public void Utility(){}
+ public Utility(){}
  
  
   //a utility method for calculating complementary error function (erfc)

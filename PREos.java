@@ -36,12 +36,8 @@ import eosPVT.ThermodynamicProperties;
 public class PREos
 {
   
-  public void PREos()
-  {
-    //contructor
-  }
+  public PREos() { }
   
-
   public double componentZFactor()
   {
       return 0;

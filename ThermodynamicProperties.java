@@ -16,7 +16,7 @@
  * (1) steam thermal properties
  * (2) oil thermal properties
  * (3) gas thermal properties
- * (4) mode fractions
+ * (4) mole fractions
  * (5) etc.
  *
  */
